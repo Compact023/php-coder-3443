@@ -1,0 +1,5 @@
+ID;Vorname;Nachname;Email;Passwort
+1;Max;"Mustermann";max.mustermann@test.at;"$2y$10$NCyLQll6ts8JkgafmdsFnuEiVvUonHEM6/cKy5F85fnMjgJCRu0D."
+2;Susi;"Musterfrau";susi.musterfrau@test.at;"$2y$10$QfYBQpRJ/c5c1a4fG1liR.3wCNdupwGNtZquyn1wrSG3pdcobTDW."
+3;John;"Doe";john.doe@test.at;"$2y$10$q2KiZ0yVPx4aSGuEHrL4FueYt8JfaWZOViJUHlOI8wK0MBLkPd3tO"
+4;Jane;"Doe";jane.doe@test.at;"$2y$10$9KbjKfVVr56LYIsxYUcNNeMLoLyPsmmidthluTToE/n89lhUYlUNy"

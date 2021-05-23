@@ -1,0 +1,24 @@
+.beitraege {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beitraege .beitrag {
+    margin: 1rem;
+    width: 18rem;
+}
+
+.beitrag .card-img-top {
+    background-position: center !important;
+    background-size: cover !important;
+    min-height: 150px;
+}
+
+.img-thumbnail {
+    max-width: 200px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}

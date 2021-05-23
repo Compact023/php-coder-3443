@@ -1,0 +1,2 @@
+2021-03-02 19:19:18 ::1 max@mustermann.de success
+2021-03-02 19:20:01 ::1 test@test error
