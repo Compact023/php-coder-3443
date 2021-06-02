@@ -33,9 +33,9 @@
 |kunden       | 5; 6(Attribute)           |                                                                                                                                                  |
 |vorstellungen| 5(Beziehung lt. Angabe)   | Zwischentable von filme und raueme - aufgrund m/n Beziehung &#2404;&#2404; vorstellung_id angelegt und als Primary Key verwendet - da ein Film mehrfach in einem Raum abgespielt werden kann|
 |tickets      | 5(Beziehung lt. Angabe)   | Zwischentable von vorstellungen und kunden - Kunde kann mehrere Tickets einer Vorstellung buchen                                                 |
-<br></br>
 
-### Foreign Keys
+
+### <br></br>Foreign Keys
 |Foreign Key name       |betroffene Id |ON UPDATE|GRUND                                                                                              |ON DELETE|GRUND2                                                          |
 |-----------------------|--------------|---------|---------------------------------------------------------------------------------------------------|---------|----------------------------------------------------------------|
 |fk_filme_sprachen1     |sprache_id    |RESTRICT |Eintrag für zugewiesene Sprache muss überprüft werden                                              |RESTRICT |Eintrag für zugewiesene Sprache muss geändert werden            |
