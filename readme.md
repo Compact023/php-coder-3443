@@ -67,7 +67,8 @@
 3. config.php - Datenbank Name in der config anpassen.
 
 ## <br></br>Beispiel abarbeiten
-### Bedienoberfläche in HTML laut Angabe realisieren (file-bezeichnungen, query-parameter,.... ) <strong>Beachte</strong>!
+### <strong>Beachte</strong>!
+- Bedienoberfläche in HTML laut Angabe realisieren (file-bezeichnungen, query-parameter,.... ) 
 - require_once für functions und config in index eintragen
 - Datenbank Verbindung Aufbauen - connectToDb()
 - Datenbank Verbindung direkt wieder schließen (Am Ende des PHP-Code Teil) - closeDb()
