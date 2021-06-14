@@ -69,6 +69,7 @@
 ## <br></br>Beispiel abarbeiten
 ### <strong>Beachte</strong>!
 - Bedienoberfläche in HTML laut Angabe realisieren (file-bezeichnungen, query-parameter,.... ) 
+    - Wenn ein foreach in einem <strong>\<?php  ...  ?\></strong> verwendet wird und in diesem weitere HTML-Elemente vewerndet werden muss zur Ausgabe von Variablen <strong>\<?=  ...  ?\></strong> ohne echo benutzt werden
 - require_once für functions und config in index eintragen
 - Datenbank Verbindung Aufbauen - connectToDb()
 - Datenbank Verbindung direkt wieder schließen (Am Ende des PHP-Code Teil) - closeDb()

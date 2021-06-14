@@ -19,7 +19,7 @@ if (isGetRequest()) {
     $formData = [
         'kunde' => formFieldValueGET('suche', '')
     ];
-} else  {
+} else {
     echo '<p>Bitte verwenden Sie die Steuerung der Website!</p>';
 }
 
