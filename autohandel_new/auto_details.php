@@ -68,37 +68,15 @@ closeDB($conn);
 
 
 <html>
+<?php if ($autos && $autos->num_rows > 0) : ?>
     <head>
         <meta charset="UTF-8">
-        <title>Verfügbare Gebrauchtwagen</title>
+        <title><?php echo $auto->modelbezeichnung ?></title>
     </head>
     <body>
-        <h1>Verfügbare Gebrauchtwagen</h1>
+        <h1><?php echo $auto->modelbezeichnung ?></h1>
         
-        <div> 
-            <form action="index.php" method="GET">
-               <label>Nach Antriebsart</label>
-                <select name="antriebsartid" id="antriebsartid">
-                    <option value="" selected>Alle</option>
-                    <?php foreach ($autos as $auto): ?>
-                        <option value="<?php echo array_unique($auto->antriebsart_id) ?>"><?php echo $auto->antriebsart ?></option>
-                    <?php endforeach; ?>
-                </select>
 
-                <label>Marke</label>
-                <select name="markeid" id="markeid">
-                    <option value="" selected>Alle</option>
-                    <?php foreach ($autos as $auto): ?>
-                        <option value="<?php echo array_unique($auto->marke_id) ?>"><?php echo $auto->marke ?></option>
-                    <?php endforeach; ?>
-                </select>
-                <button type="submit">filtern</button>
-            </form>
-        </div>
-
-
-
-<?php if ($autos && $autos->num_rows > 0) : ?>
         <table>
             <thead>
                 <tr>
@@ -120,14 +98,23 @@ closeDB($conn);
                         <td><?php echo $auto->antriebsart ?></td>
                         <td><?php echo $auto->baujahr ?></td>
                         <td><?php echo $auto->preis ?></td>                        
-                        <td><a href="auto_details.php?id=<?php echo $auto->auto_id ?>">Details</a></td>
+                        <td><a href="auto_detail.php?id=<?php echo $auto->auto_id ?>">Details</a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
-        <?php else echo 'Keine Autos gefunden!' : ?>
-            <br>
-    <nav><a href="index.php">Zurück zur Übersicht</a></nav>  
-        <?php endif; ?>       
+    <br>
+    <nav><a href="index.php">Zurück zur Übersicht</a></nav>
+
+        <?php else : ?> 
+        
+    <head>
+        <meta charset="UTF-8">
+        <title><?php echo 'Auto nicht gefunden'?></title>
+    </head>       
+            <?php echo 'Das Auto wurde nicht gefunden!' ?>
+                <br>
+                <nav><a href="index.php">Zurück zur Übersicht</a></nav>
+    <?php endif; ?>  
     </body>
 </html>
