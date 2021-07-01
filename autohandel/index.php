@@ -113,15 +113,18 @@ closeDB($conn);
                 <select name="antriebsartid" id="antriebsartid">
                     <option value="all">Alle</option>
                     <?php foreach (array_unique($antriebsarten) as $antriebsart): ?>
-                        <option value = "<?= $antriebsart ?>" <? = ($formData['antriebsartid'] == $auto->antriebsart_id ? 'selected' : '')
-                            ?>><?= $auto->antriebsart ?></option>
+                        <option value="<?= $antriebsart ?>" <?= ($formData['antriebsartid'] == $auto->antriebsart_id ? 'selected' : '')?>>
+                            <?= $auto->antriebsart ?>
+                        </option>
                     <?php endforeach; ?> 
                 </select>
                 <label>Marke</label>
                 <select name="markeid" id="markeid">
                     <option value="all" >Alle</option>
                     <?php foreach (array_unique($marken) as $marke): ?>
-                        <option value="<?= $auto->marke_id ?>" <?= ($formData['markeid'] == $auto->marke_id ? 'selected' : '') ?>><?= $auto->marke ?></option>
+                        <option value="<?= $auto->marke_id ?>" <?= ($formData['markeid'] == $auto->marke_id ? 'selected' : '') ?>>
+                            <?= $auto->marke ?>
+                        </option>
                     <?php endforeach; ?> 
                 </select>
                 <button type="submit">filtern</button> 
